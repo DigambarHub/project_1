@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+html{
+    font-size: 80.7%;
+    scroll-behavior: smooth;
+}
+body{
+    --main-color:rgb(41, 38, 38);
+    --primary-color:#32373d;
+    --prymary-button-background:#7186e6;
+    --button-background:#f66522;
+    --background-color:rgb(156, 169, 212);
+}
+h1,
+h2{
+   font-family: Avenir LT Std;
+   color:var(--main-color)
+}
+
+h3,
+h4{
+    color: var(--main-color);
+    font-family: nuli;
+}
+h3{
+    font-weight: 750;
+    font-size: 2.2rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+p,
+a,
+li,
+button{
+    font-family: nuli;
+    color: var(--primary-color);
+}
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 3.6rem;
+}
+
+
+/*------------------------------ our menu style from----------------------- */
+
+header{
+    padding: 0 7rem;
+   
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+}
+header nav .left-side-menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 55%;
+   position: relative;
+   z-index: 9;
+}
+
+header nav .left-side-menu a img {
+    width: 12rem;
+    height: 5.0rem;
+}
+header nav .left-side-menu .sub-menu1{
+   height: inherit;
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+}
+header nav .left-side-menu .sub-menu1{
+    width: 20rem;
+}
+header nav .left-side-menu .sub-menu1 a {
+    margin-left: 2rem;
+}
+header nav .left-side-menu .sub-menu1 a li {
+    font-size: 1.3rem;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    transition: all .2s ;
+}
+header nav .left-side-menu .sub-menu1 a li:hover{
+    color: var(--button-background)
+}
+
+/* .right-side-menu */
+
+header nav .right-side-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+}
+header .right-side-menu .sub-menu a li{
+    margin-right: 3rem;
+    padding: 0.6rem 2rem;
+    background: rgba(223, 208, 208, 0.5);
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 6rem;
+    position: relative;
+    z-index: 9;
+}
+header .right-side-menu button{
+    padding:.1rem 1.8rem ;
+    background-color: var(--prymary-button-background);
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 9;
+}
+header .right-side-menu button:hover{
+    background: rgb(30, 82, 223);
+}
+
+                 /*------------ our section strat-------  */
+
+                          /* - our-first section */
+
+
+.main-first-section{
+    padding: 0rem 7rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.main-first-section .left-side1 h1{
+    width: 40rem;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    margin-top:3rem ;
+}
+.main-first-section .left-side1 img{
+   width: 13rem;
+   height: 4rem;
+   padding-right: 1rem;
+}
+.main-first-section .left-side1 p{
+    width: 40rem;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+.main-first-section .button12 .google{
+    margin-bottom: 0.4rem;
+    height: 3.5rem;
+}
+
+/*------ image background ----*/
+
+.main-first-section .right-side1{
+    width: 45%;
+    height: 100vh;
+    background: rgb(211, 238, 255);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 90px 20px 0px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-first-section .right-side1 img{
+    width: 57rem;
+    height: 47rem;
+    margin-right: 25rem;
+}
+
+
+/* <!----------------------- our second section style -------------------> */
+
+
+.section2{
+    padding: 0rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding-top: 16rem;
+    padding-bottom: 10rem;
+}
+.section2 .left_side2 img{
+    width: 32rem;
+    height: 40rem;
+}
+.section2 .right_side2{
+    margin-left: 10rem;
+}
+.section2 .right_side2 h1{
+   width: 35rem;
+   font-size:4.5rem ;
+   padding-bottom: 1rem;
+   
+}
+.section2 .right_side2 p{
+    font-size: 1.5rem;
+    width: 40rem;
+    padding-bottom: 3rem;
+}
+.section2 .right_side2 .button .get{
+   padding: 0.5rem  2rem;
+   background: var(--button-background);
+   color: #fff;
+}
+.section2 .right_side2 .button .get:hover{
+   background: #c74f18;
+}
+.section2 .right_side2 .button .how{
+    padding: 0.5rem  2rem;
+    background: transparent;
+ }
+ .section2 .right_side2 .button .how:hover{
+    background: var(--button-background);
+    color: #fff;
+ }
+
+ /* ----------section third style --------------*/
+
+ .section3{
+    width: 100%;
+    height: 40rem;
+    background: #97a8f5;
+   
+ }
+ .section3 .header13 h1{
+    text-align: center;
+    font-size: 4.2rem;
+    padding-top: 4rem;
+    text-transform: capitalize;
+ }
+ .section3 .header13 p{
+   text-align: center;
+   font-size: 1.5rem;
+   padding-bottom: 5rem;
+ }
+.section3 .thirs_task{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap:3rem ;
+   padding: 0rem 7rem ;
+}
+.section3 .thirs_task .task1 img,
+.section3 .thirs_task .task2 img,
+.section3 .thirs_task .task3 img{
+  width:10rem;
+  height:10rem;
+  margin-left: 8rem;
+}
+.section3 .thirs_task .task1 h2,
+.section3 .thirs_task .task2 h2,
+.section3 .thirs_task .task3 h2{
+    text-align: center;
+}
+.section3 .thirs_task .task1 p,
+.section3 .thirs_task .task2 p,
+.section3 .thirs_task .task3 p{
+   font-size: 1.0rem;
+   text-align: center;
+}
+.section3 .thirs_task .task3{
+    background: cornsilk;
+    padding: .8rem .3rem .8rem .3rem;
+    border-radius: 1.5rem;
+}
+.section3 .thirs_task .task1:hover,
+.section3 .thirs_task .task2:hover{
+    background: cornsilk;
+    padding: .8rem .3rem .8rem .3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0rem 2rem 4rem rgba(35, 52, 53, 0.25);
+}
+
+/* -----------our section4 style-------------- */
+
+.section4{
+    padding: 0rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.section4 .left_side4{
+    padding-top: 10rem;
+}
+.section4 .left_side4 h1{
+    font-size: 4rem;
+    width: 40rem;
+    padding-bottom: 2rem;
+}
+.section4 .left_side4 p{
+    font-size: 1.2rem;
+    width: 30rem;
+    padding-bottom: 1.5rem;
+}
+.section4 .left_side4 .button .getit{
+    padding: 0.5rem  2rem;
+    background: var(--button-background);
+    color: #fff;
+}
+.section4 .left_side4 .button .getit:hover{
+    background: #c74f18;
+}
+.section4 .left_side4 .button .howit{
+    padding: 0.5rem  2rem;
+    background: transparent;
+}
+.section4 .left_side4 .button .howit:hover{
+    color: #fff;
+    background: var(--button-background);
+}
+
+.section4 .right_side4 img{
+    width: 30rem;
+    height: 40rem;
+}
+
+/* -----------our last section-------------------- */
+
+.section_last {
+    padding: 0rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+}
+.section_last .left_side img{
+    width: 20rem;
+    height: 30rem;
+}
+.section_last .right_side{
+    padding-left: 20rem;
+}
+.section_last .right_side h1{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+.section_last .right_side p{
+    font-size: 1.5rem;
+}
+
+/* --------our footer style ------------ */
+
+.footer{
+    width: 100%;
+    background: var(--background-color);
+    height: auto;
+    padding: 5rem 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer .logof img{
+    width: 20rem;
+    height: 5rem;
+}
+.footer .footer_menu{
+    display: flex;
+    margin-left: 30%;
+    justify-content: space-around;
+}
+.footer .footer_menu .menu1 h4{
+    font-size: 1.5rem;
+}
+  /*--------------- our social media --------------------- */
+ 
+.social {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.social a{
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    background: cadetblue;
+    color: #fff;
+    font-size: 1.7rem;
+    padding: .5rem;
+    transform: translatex(-9.69rem);
+    transition: all .5s linear;
+  
+}
+.social a:hover{
+    transform: translateX(0);
+}
+.social a .fab{
+    padding-left: .5rem;
+    animation: dhak .9s linear alternate-reverse infinite;
+}
+@keyframes dhak {
+    from{
+       transform: scale(.6);
+    }to{
+        transform: scale(.9);
+    }
+}
+.social .fb{
+    background: rgb(2, 89, 250);
+}
+.social .te{
+    background: rgb(34, 165, 226);
+}
+.social .in{
+    background: rgb(224, 64, 171);
+}
+.social .li{
+    background: rgb(29, 171, 214);
+}
